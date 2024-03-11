@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://static.videezy.com/system/resources/thumbnails/000/037/438/original/thumbnail.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Arial', sans-serif;
+}
+
+.parallax-container {
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+    height: 100vh;
+}
+
+.parallax-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.centered-content {
+    max-width: 600px;
+}
+
+.parallax-section img {
+    max-width: 100%;
+    /* Ajusta el tamaño máximo del logo */
+    margin-bottom: 350px;
+    /* Reduzco el margen inferior del logo */
+}
+
+
+/* ... (código existente) ... */
+
+
+/* ... (código existente) ... */
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.parallax-section h1 {
+    color: #ffffff;
+    font-size: 25px;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.parallax-section h1 span {
+    display: inline-block;
+    opacity: 0;
+}
+
+.parallax-section h1 span.show {
+    opacity: 1;
+}
+
+
+/* ... (código existente) ... */
+
+
+/* ... (código existente) ... */
+
+
+/* Estilos específicos para cada sección si es necesario */
+
+.parallax-section:nth-child(odd) {
+    background-color: #ffffff4b;
+    /* Cambia el color de fondo para secciones impares */
+}
+
+.parallax-section .buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 20px;
+    /* Ajusta la posición vertical de los botones */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    /* Asegura que los botones estén sobre las imágenes del logo */
+}
+
+.parallax-section button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.parallax-section button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.parallax-section button:active {
+    transform: scale(0.95);
+    box-shadow: none;
+}
+
+.parallax-section img#logo {
+    width: 655px;
+    /* Ajusta este valor según tus necesidades */
+    height: auto;
+    margin-bottom: 10px;
+    margin-top: -20px;
+    transition: opacity 0.5s ease;
+}
+
+.parallax-section img#logo:hover {
+    opacity: 0.8;
+}
+
+.categorias {
+    text-align: center;
+    margin-top: 20px;
+    /* Ajusta el margen superior según tus necesidades */
+}
+
+.categorias label {
+    margin-right: 10px;
+}
+
+.categorias select {
+    padding: 50px;
+}
+
+
+/* ... (código existente) ... */
+
+.parallax-section .opcionesCategorias {
+    display: none;
+    position: absolute;
+    bottom: 40px;
+    /* Cambiado a 'bottom' en lugar de 'top' */
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+.parallax-section .opcionesCategorias a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.parallax-section .opcionesCategorias a:hover {
+    background-color: #f5f5f5;
+}
+
+
+/* ... (código existente) ... */
+
+
+/* Añade una media query para ajustar estilos en dispositivos móviles */
+
+@media screen and (max-width: 600px) {
+    .parallax-section img#logo {
+        width: 100%;
+        /* Ajusta el ancho de la imagen del logo al 100% de su contenedor */
+        margin-top: 0;
+        /* Elimina el margen superior en dispositivos móviles */
+    }
+    .parallax-section h1 {
+        font-size: 24px;
+        /* Ajusta el tamaño del título para dispositivos móviles */
+    }
+    .parallax-section .buttons {
+        flex-direction: column;
+        /* Coloca los botones en una columna en dispositivos móviles */
+    }
+    .parallax-section button {
+        margin: 10px 0;
+        /* Añade margen superior e inferior a los botones en dispositivos móviles */
+    }
+}
+
+
+/* ... (código existente) ... */
+
+footer {
+    background-color: #ffffff4b;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.footer-content img {
+    width: 100px;
+    /* Ajusta el ancho según tus necesidades */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+/* ... (código existente) ... */
